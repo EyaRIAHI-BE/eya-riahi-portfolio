@@ -1,59 +1,214 @@
 <!DOCTYPE html>
+
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Eya Riahi | Biomedical Engineering Portfolio</title>
+```
+<title>Eya Riahi | Biomedical Engineer</title>
 
-    <link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="style.css">
+```
+
 </head>
 
 <body>
 
-<header>
-    <h1>Eya Riahi</h1>
-    <p>Biomedical Engineering Student | Medical Devices | CAD | AI</p>
+```
+<!-- NAVIGATION -->
+<nav class="navbar">
+
+    <div class="nav-container">
+
+        <a href="index.html" class="logo">
+            EYA RIAHI
+        </a>
+
+        <div class="nav-links">
+            <a href="#about">About</a>
+            <a href="#projects">Projects</a>
+            <a href="#skills">Skills</a>
+            <a href="#contact">Contact</a>
+        </div>
+
+    </div>
+
+</nav>
+
+
+<!-- HERO -->
+<header class="hero">
+
+    <div class="hero-content">
+
+        <p class="hero-tag">
+            BIOMEDICAL ENGINEERING PORTFOLIO
+        </p>
+
+        <h1>
+            Biomedical Engineering
+            <span>& Medical Device Design</span>
+        </h1>
+
+        <p class="hero-description">
+            Biomedical engineering student focused on medical device design,
+            orthopedic implants, CAD modeling, medical imaging and
+            artificial intelligence.
+        </p>
+
+        <div class="hero-buttons">
+
+            <a href="#projects" class="btn btn-primary">
+                Explore Projects
+            </a>
+
+            <a href="#about" class="btn btn-secondary">
+                About Me
+            </a>
+
+        </div>
+
+    </div>
+
 </header>
 
-<main>
 
-    <section>
-        <h2>About Me</h2>
+<!-- ABOUT -->
+<section id="about" class="section about-section">
 
-        <p>
-            Biomedical engineering student interested in medical device design,
-            orthopedic implants, CAD, medical imaging and artificial intelligence.
+    <div class="section-container">
+
+        <p class="section-label">
+            ABOUT ME
         </p>
-    </section>
+
+        <h2>
+            Engineering solutions for healthcare
+        </h2>
+
+        <div class="about-grid">
+
+            <div class="about-text">
+
+                <p>
+                    I am a Biomedical Engineering student at INTeK,
+                    interested in the development and improvement of
+                    medical technologies.
+                </p>
+
+                <p>
+                    My interests combine medical device design,
+                    orthopedic implants, CAD, biomechanics,
+                    medical imaging and artificial intelligence.
+                </p>
+
+                <p>
+                    Through academic projects and industrial experience,
+                    I develop solutions combining engineering,
+                    healthcare and digital technologies.
+                </p>
+
+            </div>
 
 
-    <section>
+            <div class="about-stats">
 
-        <h2>Projects</h2>
+                <div class="stat">
+                    <strong>CAD</strong>
+                    <span>Medical Device Design</span>
+                </div>
 
-        <div class="projects">
+                <div class="stat">
+                    <strong>AI</strong>
+                    <span>Medical Imaging</span>
+                </div>
+
+                <div class="stat">
+                    <strong>R&amp;D</strong>
+                    <span>Biomedical Engineering</span>
+                </div>
+
+                <div class="stat">
+                    <strong>3D</strong>
+                    <span>Modeling &amp; Manufacturing</span>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- PROJECTS -->
+<section id="projects" class="section projects-section">
+
+    <div class="section-container">
+
+        <p class="section-label">
+            SELECTED PROJECTS
+        </p>
+
+        <h2>
+            Medical Device &amp; CAD Projects
+        </h2>
+
+        <p class="section-intro">
+            A selection of biomedical engineering projects focused on
+            orthopedic devices, surgical instrumentation and mechanical
+            design.
+        </p>
+
+
+        <div class="projects-grid">
 
 
             <!-- PROJECT 1 -->
 
             <article class="project-card">
 
-                <img
-                    src="images/grands-fragments/VVue d'assemblage 3D des instruments chirurgicaux.png"
-                    alt="Grands Fragments Instrumentation Set"
-                >
+                <div class="project-image">
 
-                <h3>Grands Fragments Instrumentation Set</h3>
+                    <img
+                        src="images/grands-fragments/VVue d'assemblage 3D des instruments chirurgicaux.png"
+                        alt="Grands Fragments Instrumentation Set"
+                    >
 
-                <p>
-                    CAD modeling and technical development of an orthopedic
-                    instrumentation set for large-fragment osteosynthesis.
-                </p>
+                </div>
 
-                <a href="projects/grands-fragments.html">
-                    View Project →
-                </a>
+                <div class="project-content">
+
+                    <p class="project-category">
+                        ORTHOPEDIC INSTRUMENTATION
+                    </p>
+
+                    <h3>
+                        Grands Fragments Instrumentation Set
+                    </h3>
+
+                    <p>
+                        CAD modeling and technical development of a
+                        complete orthopedic instrumentation set for
+                        large-fragment osteosynthesis.
+                    </p>
+
+                    <div class="project-tags">
+                        <span>SolidWorks</span>
+                        <span>CAD</span>
+                        <span>Orthopedics</span>
+                    </div>
+
+                    <a
+                        href="projects/grands-fragments.html"
+                        class="project-link"
+                    >
+                        View Project →
+                    </a>
+
+                </div>
 
             </article>
 
@@ -62,21 +217,45 @@
 
             <article class="project-card">
 
-                <img
-                    src="images/extraction-hammer/assemblage marteau.png"
-                    alt="Telescopic Nail Extraction Hammer"
-                >
+                <div class="project-image">
 
-                <h3>Telescopic Nail Extraction Hammer</h3>
+                    <img
+                        src="images/extraction-hammer/assemblage marteau.png"
+                        alt="Telescopic Nail Extraction Hammer"
+                    >
 
-                <p>
-                    CAD design of a telescopic extraction hammer for
-                    intramedullary orthopedic nail removal.
-                </p>
+                </div>
 
-                <a href="projects/extraction-hammer.html">
-                    View Project →
-                </a>
+                <div class="project-content">
+
+                    <p class="project-category">
+                        SURGICAL INSTRUMENT
+                    </p>
+
+                    <h3>
+                        Telescopic Nail Extraction Hammer
+                    </h3>
+
+                    <p>
+                        CAD design and mechanical modeling of a telescopic
+                        extraction hammer intended for intramedullary
+                        orthopedic nail removal.
+                    </p>
+
+                    <div class="project-tags">
+                        <span>SolidWorks</span>
+                        <span>CAD</span>
+                        <span>Medical Device</span>
+                    </div>
+
+                    <a
+                        href="projects/extraction-hammer.html"
+                        class="project-link"
+                    >
+                        View Project →
+                    </a>
+
+                </div>
 
             </article>
 
@@ -85,51 +264,185 @@
 
             <article class="project-card">
 
-                <img
-                    src="images/prosthetic-finger/hero.png"
-                    alt="Robotic Prosthetic Finger"
-                >
+                <div class="project-image">
 
-                <h3>Robotic Prosthetic Finger</h3>
+                    <img
+                        src="images/prosthetic-finger/hero.png"
+                        alt="Robotic Prosthetic Finger"
+                    >
 
-                <p>
-                    CAD modeling and additive manufacturing of a
-                    biomechanical robotic prosthetic finger.
-                </p>
+                </div>
 
-                <a href="projects/prosthetic-finger.html">
-                    View Project →
-                </a>
+                <div class="project-content">
+
+                    <p class="project-category">
+                        BIOMECHANICS
+                    </p>
+
+                    <h3>
+                        Robotic Prosthetic Finger
+                    </h3>
+
+                    <p>
+                        CAD modeling and additive manufacturing of a
+                        biomechanical robotic prosthetic finger.
+                    </p>
+
+                    <div class="project-tags">
+                        <span>CAD</span>
+                        <span>Biomechanics</span>
+                        <span>3D Printing</span>
+                    </div>
+
+                    <a
+                        href="projects/prosthetic-finger.html"
+                        class="project-link"
+                    >
+                        View Project →
+                    </a>
+
+                </div>
 
             </article>
 
 
         </div>
 
-    </section>
+    </div>
+
+</section>
 
 
-    <section>
+<!-- SKILLS -->
+<section id="skills" class="section skills-section">
 
-        <h2>Technical Skills</h2>
+    <div class="section-container">
 
-        <p>
-            SolidWorks · CAD · Medical Devices · Orthopedic Implants ·
-            Python · MATLAB · Medical Imaging · AI · Embedded Systems
+        <p class="section-label">
+            TECHNICAL SKILLS
         </p>
 
-    </section>
+        <h2>
+            Engineering &amp; Digital Technologies
+        </h2>
 
-</main>
+
+        <div class="skills-grid">
+
+            <div class="skill-category">
+
+                <h3>Medical Devices</h3>
+
+                <p>
+                    Orthopedic Implants<br>
+                    Surgical Instruments<br>
+                    Medical Device Design<br>
+                    Quality &amp; Regulatory
+                </p>
+
+            </div>
 
 
+            <div class="skill-category">
+
+                <h3>CAD &amp; Manufacturing</h3>
+
+                <p>
+                    SolidWorks<br>
+                    3D CAD Modeling<br>
+                    Technical Drawings<br>
+                    3D Printing
+                </p>
+
+            </div>
+
+
+            <div class="skill-category">
+
+                <h3>AI &amp; Imaging</h3>
+
+                <p>
+                    Python<br>
+                    PyTorch / TensorFlow<br>
+                    Computer Vision<br>
+                    Medical Imaging
+                </p>
+
+            </div>
+
+
+            <div class="skill-category">
+
+                <h3>Embedded Systems</h3>
+
+                <p>
+                    STM32<br>
+                    ESP32<br>
+                    Raspberry Pi<br>
+                    IoT Biomedical Systems
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- CONTACT -->
+<section id="contact" class="section contact-section">
+
+    <div class="section-container">
+
+        <p class="section-label">
+            CONTACT
+        </p>
+
+        <h2>
+            Let's build better healthcare technologies.
+        </h2>
+
+        <p>
+            Interested in biomedical engineering, medical device design,
+            CAD, AI or collaborative projects?
+        </p>
+
+        <div class="contact-links">
+
+            <a href="mailto:your.email@example.com">
+                Email
+            </a>
+
+            <a href="https://www.linkedin.com/" target="_blank">
+                LinkedIn
+            </a>
+
+            <a href="https://github.com/" target="_blank">
+                GitHub
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- FOOTER -->
 <footer>
 
     <p>
-        © 2026 Eya Riahi — Biomedical Engineering Portfolio
+        © 2026 Eya Riahi
+    </p>
+
+    <p>
+        Biomedical Engineering Portfolio
     </p>
 
 </footer>
+```
 
 </body>
 </html>
