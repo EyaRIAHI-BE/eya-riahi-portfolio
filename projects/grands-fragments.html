@@ -1,1 +1,469 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <title>Grands Fragments Instrumentation Set | Eya Riahi</title>
+
+    <link rel="stylesheet" href="../style.css">
+
+    <style>
+        .project-page {
+            max-width: 1200px;
+            margin: auto;
+            padding: 60px 20px;
+        }
+
+        .project-hero {
+            text-align: center;
+            margin-bottom: 60px;
+        }
+
+        .project-hero h1 {
+            font-size: 42px;
+            margin-bottom: 20px;
+        }
+
+        .project-hero p {
+            max-width: 850px;
+            margin: auto;
+            font-size: 18px;
+            line-height: 1.7;
+        }
+
+        .project-info {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+            margin: 40px 0 70px;
+        }
+
+        .info-card {
+            padding: 25px;
+            border-radius: 12px;
+            background: #f5f5f5;
+            text-align: center;
+        }
+
+        .info-card h3 {
+            font-size: 30px;
+            margin-bottom: 8px;
+        }
+
+        .info-card p {
+            margin: 0;
+        }
+
+        .gallery-section {
+            margin-bottom: 70px;
+        }
+
+        .gallery-section h2 {
+            font-size: 28px;
+            margin-bottom: 25px;
+            border-bottom: 2px solid #ddd;
+            padding-bottom: 10px;
+        }
+
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 25px;
+        }
+
+        .instrument-card {
+            background: white;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+            transition: transform 0.25s ease;
+        }
+
+        .instrument-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .instrument-card img {
+            width: 100%;
+            height: 240px;
+            object-fit: contain;
+            background: #f7f7f7;
+            display: block;
+        }
+
+        .instrument-card h3 {
+            font-size: 17px;
+            padding: 18px;
+            margin: 0;
+            line-height: 1.4;
+        }
+
+        .back-button {
+            display: inline-block;
+            margin-bottom: 40px;
+            padding: 12px 20px;
+            border-radius: 8px;
+            text-decoration: none;
+            background: #111;
+            color: white;
+        }
+
+        .back-button:hover {
+            opacity: 0.8;
+        }
+
+        @media (max-width: 900px) {
+            .gallery {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        @media (max-width: 600px) {
+            .project-hero h1 {
+                font-size: 32px;
+            }
+
+            .project-info {
+                grid-template-columns: 1fr;
+            }
+
+            .gallery {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="project-page">
+
+    <a href="../index.html" class="back-button">
+        ← Back to Portfolio
+    </a>
+
+
+    <!-- HERO -->
+    <section class="project-hero">
+
+        <h1>Grands Fragments Instrumentation Set</h1>
+
+        <p>
+            CAD modeling and technical development of a complete orthopedic
+            instrumentation set dedicated to large-fragment osteosynthesis.
+            The project includes the design of drilling, tapping, bending,
+            extraction, measurement and screwdriving instruments used during
+            orthopedic surgery.
+        </p>
+
+    </section>
+
+
+    <!-- PROJECT INFORMATION -->
+    <section class="project-info">
+
+        <div class="info-card">
+            <h3>20+</h3>
+            <p>CAD-modeled components</p>
+        </div>
+
+        <div class="info-card">
+            <h3>3</h3>
+            <p>Sterilization trays</p>
+        </div>
+
+        <div class="info-card">
+            <h3>1</h3>
+            <p>Screw cart</p>
+        </div>
+
+    </section>
+
+
+    <!-- TAPS AND DRILLING -->
+    <section class="gallery-section">
+
+        <h2>Taps & Drilling Instruments</h2>
+
+        <div class="gallery">
+
+            <div class="instrument-card">
+                <img src="../images/grands-fragments/Taraud 06,5 pour vis corticale en T.png"
+                     alt="6.5 mm Cortical Screw Tap">
+                <h3>6.5 mm Cortical Screw Tap</h3>
+            </div>
+
+            <div class="instrument-card">
+                <img src="../images/grands-fragments/Taraud Ø4,5 pour vis spongieuse en T.png"
+                     alt="4.5 mm Cancellous Screw Tap">
+                <h3>4.5 mm Cancellous Screw Tap</h3>
+            </div>
+
+            <div class="instrument-card">
+                <img src="../images/grands-fragments/Fraise à chambrer en T.png"
+                     alt="T-Handle Countersink">
+                <h3>T-Handle Countersink</h3>
+            </div>
+
+            <div class="instrument-card">
+                <img src="../images/grands-fragments/Mèche Ø3,2 à mandrin universel.png"
+                     alt="3.2 mm Drill Bit">
+                <h3>3.2 mm Drill Bit with Universal Chuck</h3>
+            </div>
+
+            <div class="instrument-card">
+                <img src="../images/grands-fragments/Mèche Ø4,5 à mandrin universel.png"
+                     alt="4.5 mm Drill Bit">
+                <h3>4.5 mm Drill Bit with Universal Chuck</h3>
+            </div>
+
+            <div class="instrument-card">
+                <img src="../images/grands-fragments/Tréphine en T.png"
+                     alt="T-Handle Trephine">
+                <h3>T-Handle Trephine</h3>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- DRILL GUIDES -->
+    <section class="gallery-section">
+
+        <h2>Drill Guides</h2>
+
+        <div class="gallery">
+
+            <div class="instrument-card">
+                <img src="../images/grands-fragments/Guide mèche double pour meches 03,2 et 04,5.png"
+                     alt="Double Drill Guide 3.2 and 4.5 mm">
+                <h3>Double Drill Guide — 3.2 / 4.5 mm</h3>
+            </div>
+
+            <div class="instrument-card">
+                <img src="../images/grands-fragments/Guide mèche double pour mèches 04,5 et Ø6,5.png"
+                     alt="Double Drill Guide 4.5 and 6.5 mm">
+                <h3>Double Drill Guide — 4.5 / 6.5 mm</h3>
+            </div>
+
+            <div class="instrument-card">
+                <img src="../images/grands-fragments/Guide meche double 03,2 pour position neutre et de tension.png"
+                     alt="Double Drill Guide Neutral and Tension Position">
+                <h3>Double Drill Guide — Neutral & Tension Position</h3>
+            </div>
+
+            <div class="instrument-card">
+                <img src="../images/grands-fragments/Guide mèche pour mèche 03,2 avec plaque de maintien.png"
+                     alt="3.2 mm Drill Guide with Holding Plate">
+                <h3>3.2 mm Drill Guide with Holding Plate</h3>
+            </div>
+
+            <div class="instrument-card">
+                <img src="../images/grands-fragments/Guide mèche pour meche 04,5 avec plaque de maintien.png"
+                     alt="4.5 mm Drill Guide with Holding Plate">
+                <h3>4.5 mm Drill Guide with Holding Plate</h3>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- EXTRACTION AND BENDING -->
+    <section class="gallery-section">
+
+        <h2>Extraction & Bending Instruments</h2>
+
+        <div class="gallery">
+
+            <div class="instrument-card">
+                <img src="../images/grands-fragments/Extracteur en T pour vis hexagone endommagée.png"
+                     alt="T-Handle Damaged Hex Screw Extractor">
+                <h3>T-Handle Extractor for Damaged Hex Screws</h3>
+            </div>
+
+            <div class="instrument-card">
+                <img src="../images/grands-fragments/Fer a contourner droite pour plaques larges et etroites.png"
+                     alt="Right Bending Iron">
+                <h3>Right Bending Iron for Wide and Narrow Plates</h3>
+            </div>
+
+            <div class="instrument-card">
+                <img src="../images/grands-fragments/Fer à contourner gauche pour plaques larges et etroites.png"
+                     alt="Left Bending Iron">
+                <h3>Left Bending Iron for Wide and Narrow Plates</h3>
+            </div>
+
+            <div class="instrument-card">
+                <img src="../images/grands-fragments/Gabarit de pliage longueur 245mm.png"
+                     alt="245 mm Bending Template">
+                <h3>245 mm Bending Template</h3>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- MEASUREMENT AND POSITIONING -->
+    <section class="gallery-section">
+
+        <h2>Measurement & Positioning</h2>
+
+        <div class="gallery">
+
+            <div class="instrument-card">
+                <img src="../images/grands-fragments/Jauge de profondeur de 0 à 100mm.png"
+                     alt="Depth Gauge 0 to 100 mm">
+                <h3>Depth Gauge — 0 to 100 mm</h3>
+            </div>
+
+            <div class="instrument-card">
+                <img src="../images/grands-fragments/Viseur à pointe.png"
+                     alt="Pointed Aiming Guide">
+                <h3>Pointed Aiming Guide</h3>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- SCREWDRIVING -->
+    <section class="gallery-section">
+
+        <h2>Screwdriving Instruments</h2>
+
+        <div class="gallery">
+
+            <div class="instrument-card">
+                <img src="../images/grands-fragments/Tournevis hexagonale avec douille pincette Hex 3.5.png"
+                     alt="Hexagonal Screwdriver">
+                <h3>Hexagonal Screwdriver with Hex 3.5 Pinch Socket</h3>
+            </div>
+
+            <div class="instrument-card">
+                <img src="../images/grands-fragments/Chariot de vis.png"
+                     alt="Screw Cart">
+                <h3>Screw Cart</h3>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- TREPHINE -->
+    <section class="gallery-section">
+
+        <h2>Trephine</h2>
+
+        <div class="gallery">
+
+            <div class="instrument-card">
+                <img src="../images/grands-fragments/Tréphine en T.png"
+                     alt="T-Handle Trephine">
+                <h3>T-Handle Trephine</h3>
+            </div>
+
+            <div class="instrument-card">
+                <img src="../images/grands-fragments/4 vues Trephine en T.png"
+                     alt="Four Views T-Handle Trephine">
+                <h3>T-Handle Trephine — Four Views</h3>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- STERILIZATION -->
+    <section class="gallery-section">
+
+        <h2>Sterilization & Instrument Management</h2>
+
+        <div class="gallery">
+
+            <div class="instrument-card">
+                <img src="../images/grands-fragments/Plateau pour instruments.png"
+                     alt="Instrument Sterilization Tray">
+                <h3>Instrument Sterilization Tray</h3>
+            </div>
+
+            <div class="instrument-card">
+                <img src="../images/grands-fragments/Chariot de vis.png"
+                     alt="Screw Management Cart">
+                <h3>Screw Management Cart</h3>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- FOUR VIEWS -->
+    <section class="gallery-section">
+
+        <h2>Technical Four-View Presentations</h2>
+
+        <div class="gallery">
+
+            <div class="instrument-card">
+                <img src="../images/grands-fragments/4 vues Guide meche double 03,2 pour position neutre et de tension.png"
+                     alt="Four Views Double Drill Guide">
+                <h3>Double Drill Guide — Four Views</h3>
+            </div>
+
+            <div class="instrument-card">
+                <img src="../images/grands-fragments/4 vues Jauge de profondeur de 0 a 100mm.png"
+                     alt="Four Views Depth Gauge">
+                <h3>Depth Gauge — Four Views</h3>
+            </div>
+
+            <div class="instrument-card">
+                <img src="../images/grands-fragments/4 vues Tournevis hexagonale avec douille pincette Hex 3,5.png"
+                     alt="Four Views Hexagonal Screwdriver">
+                <h3>Hexagonal Screwdriver — Four Views</h3>
+            </div>
+
+            <div class="instrument-card">
+                <img src="../images/grands-fragments/4 vues Trephine en T.png"
+                     alt="Four Views Trephine">
+                <h3>Trephine — Four Views</h3>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- TECHNICAL DOCUMENTATION -->
+    <section class="gallery-section">
+
+        <h2>Technical Documentation</h2>
+
+        <div class="gallery">
+
+            <div class="instrument-card">
+
+                <img src="../images/grands-fragments/Plan pour ancillaire grands fragments.png"
+                     alt="Large Fragment Instrumentation Technical Drawing">
+
+                <h3>
+                    Large Fragment Instrumentation
+                    — Technical Drawing
+                </h3>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+</div>
+
+</body>
+</html>
