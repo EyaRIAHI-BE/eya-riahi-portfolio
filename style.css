@@ -1,3 +1,4 @@
+```css
 /* =========================
    GLOBAL
 ========================= */
@@ -88,7 +89,11 @@ img {
     overflow: hidden;
     padding: 120px 0;
     background:
-        radial-gradient(circle at 80% 20%, rgba(34, 170, 190, 0.16), transparent 30%),
+        radial-gradient(
+            circle at 80% 20%,
+            rgba(34, 170, 190, 0.16),
+            transparent 30%
+        ),
         linear-gradient(135deg, #eef8fa, #ffffff);
 }
 
@@ -119,7 +124,7 @@ img {
 .hero h1 {
     font-size: clamp(2.5rem, 6vw, 5rem);
     line-height: 1.05;
-    max-width: 850px;
+    max-width: 1000px;
     margin-bottom: 25px;
 }
 
@@ -249,6 +254,22 @@ img {
     background: #eef4f7;
 }
 
+.project-category {
+    margin-bottom: 100px;
+}
+
+.project-category:last-child {
+    margin-bottom: 0;
+}
+
+.project-category .section-title {
+    margin-bottom: 35px;
+}
+
+.project-category .section-title h2 {
+    font-size: clamp(1.7rem, 3vw, 2.5rem);
+}
+
 .projects-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -331,6 +352,51 @@ img {
 
 
 /* =========================
+   PROJECT PLACEHOLDERS
+========================= */
+
+.project-placeholder {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background:
+        radial-gradient(
+            circle at center,
+            rgba(13, 140, 164, 0.12),
+            transparent 60%
+        ),
+        #edf5f7;
+
+    color: #0d8ca4;
+    font-size: 4rem;
+    font-weight: 800;
+    letter-spacing: 3px;
+}
+
+
+/* =========================
+   QUALITY INTRO
+========================= */
+
+.quality-intro {
+    max-width: 850px;
+    padding: 40px;
+    background: white;
+    border: 1px solid #e0e7ee;
+    border-radius: 16px;
+}
+
+.quality-intro p {
+    color: #687487;
+    font-size: 1rem;
+    margin-bottom: 25px;
+}
+
+
+/* =========================
    SKILLS
 ========================= */
 
@@ -345,6 +411,13 @@ img {
     background: white;
     border: 1px solid #e3e8ef;
     border-radius: 14px;
+    transition: 0.25s;
+}
+
+.skill-card:hover {
+    transform: translateY(-4px);
+    border-color: #c7e5ea;
+    box-shadow: 0 15px 30px rgba(20, 35, 55, 0.06);
 }
 
 .skill-card h3 {
@@ -359,27 +432,68 @@ img {
 
 
 /* =========================
-   CONTACT
+   CERTIFICATIONS
 ========================= */
 
-.contact-section {
-    background: #eef4f7;
+.certifications-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
 }
 
-.contact-box {
-    max-width: 800px;
-    margin: auto;
-    padding: 50px;
-    text-align: center;
+.certification-card {
+    overflow: hidden;
     background: white;
-    border: 1px solid #e1e7ed;
-    border-radius: 18px;
+    border: 1px solid #e0e7ee;
+    border-radius: 16px;
+    transition: 0.3s;
 }
 
-.contact-box p {
-    color: #637084;
-    margin-bottom: 25px;
+.certification-card:hover {
+    transform: translateY(-7px);
+    box-shadow: 0 20px 40px rgba(20, 35, 55, 0.10);
 }
+
+.certification-image {
+    height: 280px;
+    padding: 20px;
+    background: #f0f3f6;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.certification-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.certification-content {
+    padding: 24px;
+}
+
+.certification-category {
+    display: inline-block;
+    margin-bottom: 8px;
+    color: #0d8ca4;
+    font-size: 0.7rem;
+    font-weight: 800;
+    letter-spacing: 1px;
+}
+
+.certification-content h3 {
+    font-size: 1.15rem;
+    line-height: 1.3;
+    margin-bottom: 10px;
+}
+
+.certification-content p {
+    color: #687487;
+    font-size: 0.9rem;
+}
+
+
 /* =========================
    CONTACT
 ========================= */
@@ -389,7 +503,6 @@ img {
 }
 
 .contact-grid {
-   grid-template-columns: 1fr;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 20px;
@@ -437,6 +550,7 @@ img {
     word-break: break-word;
 }
 
+
 /* =========================
    PROJECT PAGE HERO
 ========================= */
@@ -444,7 +558,11 @@ img {
 .project-hero {
     padding: 90px 0;
     background:
-        radial-gradient(circle at 80% 20%, rgba(34, 170, 190, 0.15), transparent 30%),
+        radial-gradient(
+            circle at 80% 20%,
+            rgba(34, 170, 190, 0.15),
+            transparent 30%
+        ),
         linear-gradient(135deg, #eef8fa, #ffffff);
 }
 
@@ -579,14 +697,18 @@ img {
    RESPONSIVE
 ========================= */
 
-@media (max-width: 900px) {
+@media (max-width: 1000px) {
 
     .projects-grid {
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .certifications-grid {
+        grid-template-columns: repeat(2, 1fr);
     }
 
     .skills-grid {
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: repeat(2, 1fr);
     }
 
     .about-grid {
@@ -594,9 +716,8 @@ img {
     }
 
     .project-info-grid {
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: repeat(2, 1fr);
     }
-
 }
 
 
@@ -618,6 +739,10 @@ img {
         padding: 80px 0;
     }
 
+    .hero h1 {
+        font-size: 2.5rem;
+    }
+
     .section {
         padding: 70px 0;
     }
@@ -625,7 +750,9 @@ img {
     .projects-grid,
     .skills-grid,
     .project-info-grid,
-    .gallery {
+    .gallery,
+    .certifications-grid,
+    .contact-grid {
         grid-template-columns: 1fr;
     }
 
@@ -633,8 +760,17 @@ img {
         height: 230px;
     }
 
+    .certification-image {
+        height: 300px;
+    }
+
+    .quality-intro {
+        padding: 30px 25px;
+    }
+
     .contact-box {
         padding: 30px 20px;
     }
 
 }
+```
